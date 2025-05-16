@@ -1,0 +1,330 @@
+/* 1. Basic Reset & Global Styles
+-------------------------------------------------- */
+html {
+    box-sizing: border-box;
+    font-size: 100%; /* Establishes a base for rem units if needed later */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif; /* Fallback for Dotum */
+    font-size: 12px; /* Original zboard.css base size */
+    line-height: 1.5; /* Original zboard.css line-height */
+    color: #333333; /* Slightly darker than original #666 for better readability */
+    background-color: #ffffff;
+    text-align: left; /* Overriding zboard's global center */
+}
+
+a {
+    color: #0033FF; /* Common blue for links from original content */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6600; /* Original zboard.css hover color */
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0; /* Remove default image borders */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Consistent heading font */
+}
+
+p, ul, ol {
+    margin-bottom: 1em;
+    text-align: justify; /* As per original zboard.css for p, li */
+}
+ul, ol {
+    padding-left: 20px; /* Standard indentation for lists */
+}
+li {
+    text-align: justify; /* As per original zboard.css for p, li */
+    margin-bottom: 0.5em;
+}
+
+
+/* 2. Page Layout Structure
+-------------------------------------------------- */
+.site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.site-header {
+    background-color: #000000;
+    color: #ffffff;
+    height: 100px; /* Original frame height */
+    flex-shrink: 0;
+    padding: 0 15px; /* Add some horizontal padding */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1300px; /* Max width for content within header */
+    margin: 0 auto; /* Center header content */
+}
+
+.logo-left img {
+    height: 80px; /* Original height */
+    width: auto;
+}
+
+.logo-right img {
+    height: 80px; /* Original height */
+    width: auto;
+}
+
+.site-body-container {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    overflow: hidden; /* Prevent this container from causing page scrollbars */
+}
+
+.site-sidebar {
+    width: 150px; /* Original frame width */
+    flex-shrink: 0;
+    background-color: #f0f0f0; /* Light grey for sidebar */
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.site-main-content {
+    flex-grow: 1;
+    padding: 20px; /* Add some padding around the main content area */
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+
+/* 3. Header Navigation Styling
+-------------------------------------------------- */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center; /* For the nav items themselves */
+}
+
+.main-nav li {
+    margin: 0 5px; /* Spacing between nav items */
+    text-align: center; /* Ensure li content is centered if block */
+}
+
+.main-nav a {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Equivalent to original "size 5" font tag, adjust as needed */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.main-nav a:hover {
+    color: #FF6600; /* Standard hover from zboard */
+    text-decoration: underline;
+}
+
+
+/* 4. Main Content Sections Styling
+-------------------------------------------------- */
+.news-highlights {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #000000; /* Replicating outline from original table row */
+}
+
+.news-highlights h2 {
+    background-color: #b8011c; /* Original red background */
+    color: #ffffff;
+    font-size: 20px; /* Approx original font size="6" */
+    text-align: center;
+    padding: 10px;
+    margin: -15px -15px 15px -15px; /* Extend to fill padding of parent */
+    font-weight: bold;
+}
+
+.news-highlights ul {
+    list-style-type: disc; /* Standard bullets */
+    font-size: 14px; /* Approx original font size="4" */
+    color: #000000;
+    padding-left: 25px; /* Indent list items */
+}
+.news-highlights li {
+    margin-bottom: 8px; /* Original margin style */
+}
+.news-highlights li a { /* Links specifically within news items */
+    color: #0000FF; /* blue */
+}
+
+.main-image-section {
+    text-align: center; /* Center the image */
+    margin-bottom: 20px;
+    border: 1px solid #000000; /* Add border if the original table row implied it */
+    padding: 10px;
+}
+.main-image-section img {
+    max-width: 1280px; /* Original width */
+    width: 100%; /* Make it responsive up to max-width */
+}
+
+.web-counter-section {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 10px; /* Smaller text for "Free Web Counter" */
+}
+.web-counter-section img {
+    display: inline-block; /* To align with text if needed */
+    vertical-align: middle;
+}
+.web-counter-section .small-text {
+    font-size: 0.8em;
+}
+
+.older-news { /* Styles for the commented-out older news section */
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+.older-news h3 {
+    background-color: #FF9999; /* Original pink background */
+    color: #000000;
+    font-size: 12px; /* Original font size="2" */
+    padding: 8px;
+    margin: -15px -15px 15px -15px; /* Extend to fill padding of parent */
+    font-weight: bold;
+}
+.older-news ul {
+    list-style-type: disc;
+    font-size: 12px; /* Original font size="2" */
+    color: #000000;
+}
+.older-news li {
+    margin-bottom: 5px;
+}
+
+.welcome-section {
+    text-align: center; /* Center the image and text block for this section */
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #FFDDDD; /* Light pinkish, approximating original #FF9999 but softer */
+    border-top: 1px solid #FF9999;
+    border-bottom: 1px solid #FF9999;
+}
+.welcome-section h3 {
+    font-size: 12px; /* Original font size="2" */
+    color: #000000;
+    font-weight: bold;
+    text-align: left; /* Align heading to left as per original bgcolor bar */
+    margin-bottom: 10px;
+}
+.welcome-section .profile-image {
+    width: 448px; /* Original width */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc; /* Optional: add a light border to image */
+}
+.welcome-section p {
+    font-size: 12px; /* Original font size="2" */
+    color: #000000;
+    text-align: justify;
+    max-width: 600px; /* Limit width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8; /* Light grey background for search section */
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.site-search form {
+    display: flex;
+    align-items: center;
+}
+.site-search .google-logo-link {
+    margin-right: 10px;
+}
+.site-search .google-logo {
+    width: 128px; /* Original width */
+    height: 53px; /* Original height */
+    vertical-align: middle;
+}
+.site-search .search-input {
+    padding: 5px 8px;
+    font-size: 12px;
+    border: 1px solid #cccccc;
+    margin-right: 5px;
+    min-width: 250px; /* Give it some decent width */
+}
+.site-search .search-button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #e0e0e0;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+.site-search .search-button:hover {
+    background-color: #d0d0d0;
+}
+
+.main-footer-info {
+    text-align: right;
+    font-size: 11px; /* Original font size="2" but slightly smaller for footer */
+    color: #333333;
+    padding: 15px;
+    border-top: 1px solid #FF9999; /* Original pink separator */
+}
+.main-footer-info .copyright {
+    text-align: right; /* Ensure copyright is right aligned */
+    margin-bottom: 5px;
+}
+.main-footer-info .extreme-dm-tracker {
+    margin-top: 5px;
+}
+.main-footer-info .extreme-dm-tracker img {
+    width: 41px; /* Original width */
+    height: 38px; /* Original height */
+}
+
+/* 5. Utility Classes (Add as needed)
+-------------------------------------------------- */
+.text-center {
+    text-align: center !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.bold {
+    font-weight: bold;
+}
