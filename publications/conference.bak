@@ -1,0 +1,559 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="DESCRIPTION"
+content="MEMS@UC (MicroSystems and MicroSensors Laborotory at the University of Cincinnati), Micro Electro Mechanical Systems (MEMS)">
+<meta name="KEYWORD"
+content="MEMS@UC, MEMS, microfluidics, Bio MEMS, Optical MEMS, magnetic MEMS, chong Ahn, kwang wook oh, university of Cincinnati, ECECS">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>BioMEMS@UC - MicroSystems &amp; BioMEMS - Publications - Conference</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#201717" link="#3030FF"
+vlink="#1010B4" alink="#FF1C1C" topmargin="7" leftmargin="7">
+
+<form
+action="http://www.mems.uc.edu/cgi-bin/cgiwrap/cahn/memsearch.cgi"
+method="get">
+    <table border="0" cellpadding="0" cellspacing="0" width="660">
+        <tr>
+            <td valign="top" colspan="2" width="660"><table
+            border="0" cellpadding="0" cellspacing="0"
+            width="660">
+                <tr>
+                    <td align="right" valign="bottom">&nbsp;</td>
+                </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0"
+            width="660">
+                <tr>
+                    <td><img src="http://www.biomems.uc.edu/images/tab.gif" hspace="300"
+                    width="1" height="2"></td>
+                </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0"
+            width="660">
+                <tr>
+                    <td valign="bottom"><a href="../index.html"><img
+                    src="http://www.biomems.uc.edu/images/cmsmmems.gif"
+                    alt="cmsmmems.gif (17211 bytes)" border="0"
+                    width="120" height="46"></a></td>
+                    <td><img src="http://www.biomems.uc.edu/images/blank.gif"
+                    alt="blank.gif (49 bytes)" width="10"
+                    height="10"></td>
+                    <td align="right" valign="bottom"><a
+                    href="index.html"><img
+                    src="http://www.biomems.uc.edu/images/banner-publications.gif"
+                    alt="banner-publications.gif (5411 bytes)"
+                    border="0" width="342" height="60"></a><a
+                    href="../index.html"><img
+                    src="http://www.biomems.uc.edu/images/banner-memsatuc2.gif"
+                    alt="banner-memsatuc2.gif (3244 bytes)"
+                    border="0" width="126" height="60"></a></td>
+                </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0"
+            width="660">
+                <tr>
+                    <td><img src="http://www.biomems.uc.edu/images/tab.gif" hspace="300"
+                    width="1" height="10"></td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="195"><table border="0"
+            cellpadding="0" cellspacing="0" width="195">
+                <tr>
+                    <td align="right" width="114"><img
+                    src="http://www.biomems.uc.edu/images/bar-MEMSatUCSites.gif"
+                    alt="bar-MEMSatUCSites.gif" width="114"
+                    height="20"></td>
+                    <td width="75"><img
+                    src="http://www.biomems.uc.edu/images/bar-whatsnew2.gif"
+                    alt="what's new title" width="75" height="27"></td>
+                    <td width="1"><img src="http://www.biomems.uc.edu/images/tab.gif"
+                    width="1" height="27"></td>
+                    <td rowspan="3" width="5"><img
+                    src="http://www.biomems.uc.edu/images/tab.gif" vspace="2" width="5"
+                    height="1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" width="189">
+                    <img src="http://www.biomems.uc.edu/images/tab.gif" width="10"
+                    height="10"></td>
+                    <td rowspan="2" width="1" bgcolor="#808080"><img
+                    src="http://www.biomems.uc.edu/images/tab.gif" width="1"
+                    height="100"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" width="189"><ul>
+                        <li><a href="../index.html"><font
+                            size="2" face="Arial">Home</font></a></li>
+                        <li><a href="../people/index.html"><font
+                            size="2" face="Arial">People</font></a></li>
+                        <li><a href="../research/index.html"><font
+                            size="2" face="Arial">Research</font></a></li>
+                        <li><a href="index.html"><font size="2"
+                            face="Arial">Publications</font></a><font
+                            size="2" face="Arial"><br>
+                            <a href="journal.html">Journals</a><br>
+                            <a href="conference.html"><strong>Conferences</strong></a><br>
+                            <a href="invited.html">Invited Talks</a><br>
+                            <a href="book.html">Books</a><br>
+                            <a href="patent.html">Patents</a><br>
+                            </font></li>
+                        <li><font face="Arial" size="2"><a href="http://www.biomems.uc.edu/press/index.html">Press
+                          Release</a></font></li>
+                        <li><a href="../sponsors/index.html"><font
+                            size="2" face="Arial">Sponsors</font></a></li>
+                        <li><a href="../links/index.html"><font
+                            size="2" face="Arial">Links</font></a></li>
+                        <li><a href="../index.html"><font
+                            size="2" face="Arial">MEMS@UC</a><br>
+                            <a
+                            href="http://www.ececs.uc.edu">ECECS@UC</a><br>
+                            <a
+                            href="http://www.eng.uc.edu">Engineering@UC</a><br>
+                            <a href="http://www.uc.edu">Univesity of
+                            Cincinnati</font></a><font
+                            color="#808000" size="2" face="Arial"><br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                            </font><br>
+                            <br>
+                            </li>
+                    </ul>
+                    <p><font color="#808000" face="Arial"><br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    </font></p>
+                    </td>
+                </tr>
+            </table>
+            </td>
+            <td valign="top" width="465"><table border="0"
+            cellpadding="0" cellspacing="0" width="465">
+                <tr>
+                    <td valign="top" width="465"></td>
+                </tr>
+            </table>
+            <table border="0" cellspacing="0" width="465">
+                <tr>
+                    <td background="http://www.biomems.uc.edu/images/cellcolor.gif">
+                    <font
+                    size="2" face="Arial"><strong>Peer Reviewed Conference Proceedings&nbsp;</strong></font></td>
+                </tr>
+                <tr>
+                    <td>
+                            <p>&nbsp;<font size="2" face="Arial"><u>Year 2003</u></font></p>
+                            <ul>
+                                <li><font face="Arial" size="2">R. Rong, J.-W. Choi and Chong Ahn, &quot;A Novel Magnetic
+Chaotic Mixer For In-Flow Mixing of Magnetic Beads,&quot; Proceedings of the
+7th International Conference on Micro Total Analysis Systems (micro-TAS 2003),
+California, USA, October 5-9, 2003, p335-338.</font></li>
+                                <li><font face="Arial" size="2">S. Horike, S. H. Lee, T. Nishimoto and C. H. Ahn,
+&quot;Self-Assembly of Colloids for Plastic Capillary Electrochromatography
+Chip,&quot; Proceedings of the 7th International Conference on Micro Total
+Analysis Systems (micro-TAS 2003), California, USA, October 5-9, 2003,
+p.417-420.</font></li>
+                                <li><font face="Arial" size="2">A. Puntambekar, X. Zhu, R. Cole and C. H. Ahn,
+&quot;Integration of Metallic Microneedles with Disposable Biochips for
+Minimally Invasive Blood Sampling,&quot; Proceedings of the 7th International
+Conference on Micro Total Analysis Systems (micro-TAS 2003), California, USA,
+October 5-9, 2003, p.599-602.</font></li>
+                                <li><font face="Arial" size="2">C. Gao, X. Zhu, M. Dutta, S. Chilukuru, J. H. Nevin, J.-W.
+Choi and C. H. Ahn, &quot;Development of Inexpensive Biosensor Array for
+Point-of-Care Testing,&quot; Proceedings of the 7th International Conference on
+Micro Total Analysis Systems (micro-TAS 2003), California, USA, October 5-9,
+2003, p.797-800.</font></li>
+                                <li><font face="Arial" size="2">X. Zhu, C. Gao, J. Kai, J, Do, J.-W. Choi and C. H. Ahn,
+&quot;A novel Dynamic Electrochemical Transduction Mechanism for Low
+Concentration Analyte Detection,&quot; Proceedings of the 7th International
+Conference on Micro Total Analysis Systems (micro-TAS 2003), California,
+USA, October 5-9, 2003, p.801-804.</font></li>
+                                <li><font face="Arial" size="2">A. Puntambekar and C.H. Ahn, &quot;A novel Microdispenser
+Array for Accurate Off-Chip Dispensing for Microarray Applications,&quot;
+Proceedings of the 7th International Conference on Micro Total Analysis Systems
+(micro-TAS 2003), California, USA, October 5-9, 2003, p. 975-978.</font></li>
+                                <li><font face="Arial" size="2">A. Jain, A. Puntambekar and C. H. Ahn, &quot;A novel
+Bioparticle Separation Technique Using Sequential Pressure Pulses,&quot;
+Proceedings of the 7th International Conference on Micro Total Analysis Systems
+(micro-TAS 2003), California, USA, October 5-9, 2003, p.1017-1020.</font></li>
+                                <li><font face="Arial" size="2">J. Kai, Y. S. Sohn and C. H. Ahn, &quot;Protein Microarray
+on Cyclic Olefin Copolymer (COC) for Disposable Protein Lab-on-a-Chip,&quot;
+Proceedings of the 7th International Conference on Micro Total Analysis Systems
+(micro-TAS 2003), California, USA, October 5-9, 2003, p.1101-1104.</font></li>
+                                <li><font face="Arial" size="2">J. Han, S. H. Lee, A. Puntambekar, S. Murugesan, J.-W. Choi,
+G. Beaucage and C. H. Ahn, &quot;UV Adhesive Bonding Techniques at Room
+Temperature for Plastic Lab-on-a-Chip,&quot; Proceedings of the 7th
+International Conference on Micro Total Analysis Systems (micro-TAS 2003), California,
+USA, October 5-9, 2003, pp.1113-1116.</font></li>
+                                <li><font face="Arial" size="2">A. Puntambekar, C. Hong, C. Gao, X. Zhu, R. Trichur, J. Han,
+S. H. Lee, J. Kai, J. Do, R. Rong, S. Chilukuru, M. Dutta, L. Ramasamy, S.
+Murugesan, R. Cole, J. Nevin, G. Beaucage, J. B. Lee, J. Y. Lee, M. Bissell,
+J.-W. Choi and C. H. Ahn, &quot;Smart Disposable Plastic Lab-on-a-Chip for
+Point-of-Care-Testing (POCT),&quot; Proceedings of the 7th International
+Conference on Micro Total Analysis Systems (micro-TAS 2003), California,
+USA, October 5-9, 2003, pp.1291-1294.</font></li>
+                                <li><font face="Arial" size="2">R. Rong, J.-W. Choi, 
+                                and C. H. Ahn, &quot;A Functional Magnetic Bead 
+                                or Biocell Sorter Using Fully Integrated Magnetic 
+                                Micro/Nano Tips,&quot; Proceedings of the 16th IEEE 
+                                MEMS Workshop (MEMS '03), Kyoto, Japan, January 
+                                19-23, 2003, pp. 530-533.</font></li>
+                                <li><font face="Arial" size="2">J.-W. Choi, 
+                                A. Puntambekar, C.-C. Hong, C. Gao, X. Zhu, 
+                                R. Trichur, J. Han, S. Chilukuru, M. Dutta, 
+                                S. Murugesan, S. Kim, Y.-S. Sohn, J. H. Nevin, 
+                                G. Beaucage, J.-B. Lee, J. Y. Lee, M. G. Bissell, 
+                                and C. H. Ahn, &quot;A Disposable Plastic Biochip 
+                                Cartridge with On-Chip Power Sources for Blood 
+                                Analysis,&quot; Proceedings of the 16th IEEE MEMS 
+                                Workshop (MEMS '03), Kyoto, Japan, January 
+                                19-23, 2003, pp. 447-450.</font></li>
+                                <li><font face="Arial" size="2">C.-C. Hong, 
+                                S. Murugesan, S. Kim, G. Beaucage, J.-W. Choi, 
+                                and C. H. Ahn, &quot;A Functional On-Chip Pressure 
+                                Generator Using Solid Chemical Propellant for 
+                                Disposable Lab-on-a-Chip,&quot; Proceedings of the 
+                                16th IEEE MEMS Workshop (MEMS '03), Kyoto, 
+                                Japan, January 19-23, 2003, pp. 16-19.</font></li>
+                            </ul>
+                            <p>&nbsp;<font size="2" face="Arial"><u>Year 2002</u></font></p>
+                            <ul>
+                                <li><font face="Arial" size="2">C.-C. Hong, 
+                                J.-W. Choi, and C. H. Ahn, &quot;A Disposable On-Chip 
+                                Air Detonator for Driving Fluids on Point-of-Care 
+                                Systems,&quot; Proceedings of the 6th International 
+                                Conference on Micro Total Analysis Systems (</font><font size="2" face="Arial">micro</font><font face="Arial" size="2">-TAS 
+                                2002), Nara, Japan, November 3-7, 2002, pp. 
+                                949-951.</font></li>
+                                <li><font face="Arial" size="2">C. Gao, H. L. 
+                                R. Rilo, J.-W. Choi, and C. H. Ahn, &quot;A Microfluidic 
+                                Biosystem for Metabolic Monitoring of Human 
+                                Islet Cells with Integrated Biosensors,&quot; Proceedings 
+                                of the 6th International Conference on Micro 
+                                Total Analysis Systems (</font><font size="2" face="Arial">micro-</font><font face="Arial" size="2">TAS 
+                                2002), Nara, Japan, November 3-7, 2002, pp. 
+                                787-789.</font></li>
+                                <li><font face="Arial" size="2">R. Trichur, 
+                                S. Kim, S. H. Lee, Y. A. Abdelaziez, D. E. Starkey, 
+                                H. B. Halsall, W. R. Heineman, and C. H. Ahn, 
+                                &quot;A New Plastic CE Chip with Wide Optical Clarity 
+                                Using Cyclic Olefin Copolymers (COC),&quot; Proceedings 
+                                of the 6th International Conference on Micro 
+                                Total Analysis Systems (</font><font size="2" face="Arial">micro</font><font face="Arial" size="2">-TAS 
+                                2002), Nara, Japan, November 3-7, 2002, pp. 
+                                560-562.</font></li>
+                                <li><font face="Arial" size="2">A. Puntambekar, 
+                                S. Murugesan, R. Trichur, H. J. Cho, S. Kim, 
+                                J.-W. Choi, G. Beaucage, and C. H. Ahn, &quot;Effect 
+                                of Surface Modification on Thermo-Plastic Fusion 
+                                Bonding for 3-D Microfluidics,&quot; Proceedings 
+                                of the 6th International Conference on Micro 
+                                Total Analysis Systems (</font><font size="2" face="Arial">micro</font><font face="Arial" size="2">-TAS 
+                                2002), Nara, Japan, November 3-7, 2002, pp. 
+                                425-427.</font></li>
+                                <li><font face="Arial" size="2">A. Puntambekar, 
+                                R. Trichur, J.-W. Choi, and C. H. Ahn, &quot;3-D 
+                                Microfluidic Networks for Combinatorial Chemistry,&quot; 
+                                Proceedings of the 6th International Conference 
+                                on Micro Total Analysis Systems (</font><font size="2" face="Arial">micro</font><font face="Arial" size="2">-TAS 
+                                2002), Nara, Japan, November 3-7, 2002, pp. 
+                                422-424.</font></li>
+                                <li><font face="Arial" size="2">J. Kai, Y.-S. 
+                                Sohn, and C. H. Ahn, &quot;Study on Protein (IgG) 
+                                Adsorption in Terms of Surface Modification 
+                                of Cyclic Olefin Copolymer (COC) for Protein 
+                                Biochip,&quot; Proceedings of the 6th International 
+                                Conference on Micro Total Analysis Systems (</font><font size="2" face="Arial">micro</font><font face="Arial" size="2">-TAS 
+                                2002), Nara, Japan, November 3-7, 2002, pp. 
+                                419-421.</font></li>
+                                <li><font face="Arial" size="2">R. Trichur, 
+                                S. Kim, X. Zhu, J. W. Suk, C.-C. Hong, J.-W. 
+                                Choi, and C. H. Ahn, &quot;Development of Plastic 
+                                Microneedles for Transdermal Interfacing Using 
+                                Injection Molding Techniques,&quot; Proceedings 
+                                of the 6th International Conference on Micro 
+                                Total Analysis Systems (</font><font size="2" face="Arial">micro</font><font face="Arial" size="2">-TAS 
+                                2002), Nara, Japan, November 3-7, 2002, pp. 
+                                395-397.</font></li>
+                                <li><font face="Arial" size="2">J.-W. Choi, 
+                                J. Do, and C. H. Ahn, &quot;Hybrid Type On-Chip 
+                                Magnetic Particle Separators for Accurate Positioning 
+                                Magnetic Beads,&quot; Proceedings of the 6th International 
+                                Conference on Micro Total Analysis Systems (</font><font size="2" face="Arial">micro</font><font face="Arial" size="2">-TAS 
+                                2002), Nara, Japan, November 3-7, 2002, pp. 
+                                329-331.</font></li>
+                                <li><font face="Arial" size="2">C. H. Ahn, J.-W. 
+                                Choi, A. Puntambekar, C.-C. Hong, X. Zhu, C. 
+                                Gao, R. Trichur, S. Chilukuru, M. Dutta, S. 
+                                Murugesan, S. Kim, Y.-S. Sohn, J. H. Nevin, 
+                                G. Beaucage, J.-B. Lee, J. Y. Lee, and M. G. 
+                                Bissell, &quot;Disposable Biochip Cartridge for 
+                                Clinical Diagnostics toward Point-of-Care Systems,&quot; 
+                                Proceedings of the 6th International Conference 
+                                on Micro Total Analysis Systems (</font><font size="2" face="Arial">micro</font><font face="Arial" size="2">-TAS 
+                                2002), Nara, Japan, November 3-7, 2002, pp.187-189.</font></li>
+                                <li><font face="Arial" size="2">S. Kim, R. Trichur, 
+                                G. Beaucage, C. H. Ahn, and B. H. Kim, &quot;New 
+                                Plastic Microinjection Molding Technique for 
+                                Extremely Tall Plastic Structures using Remote 
+                                Infrared Radiation Heating Method,&quot; Proceedings 
+                                of the 10th Solid-State Sensor, Actuator and 
+                                Microsystems Workshop, Hilton Head Island, SC, 
+                                June 2-6, 2002, pp. 206-209.</font></li>
+                                <li><font face="Arial" size="2">C. Gao, J.-W. 
+                                Choi, M. Dutta, S. Chilukuru, J. H. Nevin, J. 
+                                Y. Lee, M. G. Bissell, and C. H. Ahn, &quot;A Fully 
+                                Integrated Biosensor Array for Measurement of 
+                                Metabolic Parameters in Human Blood,&quot; Proceedings 
+                                of the 2nd Second Annual International IEEE-EMBS 
+                                Special Topic Conference on Microtechnologies 
+                                in Medicine &amp; Biology, Madison, WI, May 
+                                2-4, 2002, pp. 223-226.</font></li>
+                                <li><font face="Arial" size="2">C. Gao, J.-W. 
+                                Choi, and C. H. Ahn, &quot;A Novel Glucose Biosensor 
+                                with Gel-Based Solid Electrolyte and Microheater 
+                                Structure for Rapid Detection,&quot; Proceedings 
+                                of the 7th World Congress on Biosensors, Kyoto, 
+                                Japan, May 15-17, 2002, P2-3.68.</font></li>
+                                <li><font size="2" face="Arial">C. H. Ahn, J.-W. Choi,
+                          S. Kim, Y. S. Sohn, A. Puntambeker, S. Murugesan, G. Beaucage, and
+                          J. H. Nevin, &quot;Disposable Smart Plastic Biochips For Clinical Diagnostics,&quot; BioMEMS Conference, Material Research Society (MRS), San Francisco, April 1-3,
+                          2002 (Invited).</font></li>
+                        <li><font size="2" face="Arial">C. H. Ahn, S. Kim, H. J. Cho,
+                          S. Murugesan, G. Beaucage, &quot;Surface Modification Of Cyclic Olefinic Copolymers For Bio-Mems Microfluidic Devices,&quot; BioMEMS Conference, Material Research Society (MRS), San Francisco, April 1-3, 2002.&nbsp;</font></li>
+                                <li><font face="Arial" size="2">D. E. Starkey, Y. A. Abdelaziez, A. Han, L. Anderson, K. R. Wehmeyer, J. J. 
+                                Bao, M. C. Prenger, N. J. Izzo, C. H. Ahn, H. B. Halsall, C. J. Seliskar, 
+and W. R. Heineman, &quot;Pharmaceutical Applications of Microchip Capillary 
+Electrophoresis,&quot; PITCONN 2002, Orlando, FL, March 9-14, 2002.</font></li>
+                                <li><font size="2" face="Arial">C.-C. Hong, J.-W. Choi, and C. H. Ahn, &quot;Disposable Air-Bursting Detonator As an Alternative On-Chip Power Source,&quot; Proceedings of the 15th IEEE MEMS Workshop (MEMS '02), Las Vegas, NV, January 20-24, 2002, pp. 240-243.</font></li>
+                        <li><font size="2" face="Arial">X. Zhu, J.-W. Choi, and C. H. Ahn, &quot;A New Laser Micromachining Technique Using a Mixed-Mode Ablation Approach,&quot; Proceedings of the 15th IEEE MEMS Workshop (MEMS '02), Las Vegas, NV, January 20-24, 2002, pp. 152-155.</font></li>
+                            </ul>
+                      <p><font size="2" face="Arial">&nbsp;<u>Year 2001</u></font></p>
+                      <ul>
+                        <li><font size="2" face="Arial">C. H. Ahn, J.-W. Choi, S. Kim, Y.-S. Sohn, G. Beaucage, and J. H. Nevin, &quot;Disposable Smart Microfluidic-Based Biochips for Clinical Diagnostics,&quot; Proceedings of 2001 International Semiconductor Device Research Symposium (ISDRS 2001), Washington, DC, December 5-7, 2001, pp.
+                          427-429 	(Invited).</font></li>
+                        <li><font size="2" face="Arial">C.-C. Hong, S.-M. Lee,
+                          C. H. Ahn, M. Nielsen, and K. McManus, &quot;A Pressure-Controlled Torsion-Type Check Microvalve&quot;, Proceedings of ASME IMECE 2001 Volume 1, New York, NY, November 11-16, 2001.</font></li>
+                        <li><font size="2" face="Arial">R. Rub, Sukirti Gupta and Chong H Ahn., &quot;High directional senstivities of micro-  machined magnetic fluxgate sensors&quot;, Proc. IEEE Transducers'01 Conference, Munich, Germany, June 2001,
+                          pp 148- 151.</font></li>
+                        <li><font size="2" face="Arial">H. J. Cho and C. H. Ahn, &quot;Micromachined Resin Bonded Permanent Magnet Arrays Using a Bumper Filling Technique&quot;, Proc. 46th Annual Conference on Magnetism and Magnetic Materials, Seattle, WA, Nov. 12-16, 2001, p.389</font></li>
+                        <li><font size="2" face="Arial">J.-W. Choi, S. Kim, R.Trichur, H. J. Cho, A. Puntambekar, R. L. Cole, J. R. Simkins, S. Murugesan, K. S. Kim, J. B. Lee, G. Beaucage, J. H. Nevin, and C. H. Ahn, &quot;A Plastic Micro Injection Molding Technique Using Replaceable Mold-Disks for Disposable Microfluidic Systems and Biochips&quot;, Proceedings of the 5th International Conference on Micro Total Analysis Systems (micro-TAS 2001), Monterey, CA, Oct. 21-25, 2001, pp. 411-412.&nbsp;</font></li>
+                        <li><font size="2" face="Arial">T. R. Butt, H. Tran, J.-W. Choi, H. J. Cho and C. H. Ahn, &quot;A Disposable Cell-Based Biochip for Detection of Hormones and Drugs&quot;, Proceedings of the 5th International Conference on Micro Total Analysis Systems (micro-TAS 2001), Monterey, CA, 2001, Oct. 21-25, 2001, pp. 83-84.</font></li>
+                        <li><font size="2" face="Arial">A. Puntambekar, J.-W. Choi, C. H. Ahn, S. Kim, S. Bayyuk, and V. B. Makhijani, &quot;An Air-Driven Fluidic Multiplexer Integrated with Microdispensers,&quot; Proceedings of the 5th International Conference on Micro Total Analysis Systems
+                          (micro-TAS 2001), Monterey, CA, October 21-25, 2001, pp.78-80.</font></li>
+                        <li><font size="2" face="Arial">C.-C. Hong, J.-W. Choi, and C. H. Ahn, &quot;A Novel In-Plane Passive Micromixer Using Coanda Effect,&quot; Proceedings of the 5th International Conference on Micro Total Analysis Systems
+                          (micro-TAS 2001), Monterey, CA, October 21-25, 2001, pp. 31-33.</font></li>
+                        <li><font size="2" face="Arial">A. Puntambekar, H. J. Cho, C.-C. Hong, J.-W. Choi, C. H. Ahn, S. Kim, and V. B. Makhijani, &quot;A New Fixed-Volume Metering Microdispenser Module Based on sPROMs Technology,&quot; Technical Digest of the 11th International Conference on Solid-State Sensors and Actuators (Transducers '01), Munich, Germany, June 10-14, 2001, pp. 1240-1243.</font></li>
+                        <li><font size="2" face="Arial">K. S. Kim, S. W. Park, J.-B. Lee, and C. H. Ahn, &quot;Polymeric and Metallic Micromachining Techniques for BioMEMS,&quot; Tex MEMS III Conference, Dallas, TX, June 7, 2001.</font></li>
+                        <li><font size="2" face="Arial">J. Yan, S. T. Kowel, H. J. Cho, and C. H. Ahn, &quot;Micromirror Arrays for Stereoscopic 3D Displays&quot;, Society of Information Display Symposium '01, San Jose, CA, June 3-8, 2001.</font></li>
+                        <li><font size="2" face="Arial">H. J. Cho and C. H. Ahn, &quot;Patterning of magnetic beads with electroplated thick magnet arrays for biomems applications&quot;, Proc. The 8th Joint MMM-Intermag Conference, San Antonio, TX, Jan. 7-11, 2001, p.523.</font></li>
+                        <li><font face="Arial" size="2">H. J. Cho, K. W. Oh, C. H. Ahn, P. Boolchand, and
+                          T.-C.l Nam,  &quot;Stress analysis of silicon membranes with electroplated permalloy films using Raman spectroscopy&quot;,The 8th Joint MMM-Intermag Conference, San Antonio, 2001, p.463&nbsp;uot;,
+                            Proc. IEEE Microelectromechanical
+                            Systems (MEMS) Workshop, pp. 1-6,
+                            Fort Lauderdale, FL, February 7-10,
+                            1993.</font></li>
+                        <li><font size="2" face="Arial">C. H. Ahn
+                            and M. G. Allen, &quot;A Fully
+                            Integrated Micromagnetic Actuator
+                            with a Multilevel Magnetic Core&quot;,
+                            Proc. IEEE Solid State Sensor and
+                            Actuator Workshop, pp. 14-18, Hilton
+                            Head, SC, June 1992.</font></li>
+                        <li><font size="2" face="Arial">C. H. Ahn
+                            and M. G. Allen, &quot;Measurement of
+                            Polymer Mechanical Properties Using
+                            Microfabricated Resonant Structures&quot;,
+                            Proc. the American Chemical Society
+                            Conference, PMSE., Vol. 64, pp. 395-396,
+                            1991.</font></li>
+                    </ul>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" colspan="2" width="660"><table
+            border="0" cellpadding="0" cellspacing="1"
+            width="660">
+                <tr>
+                    <td><hr size="1" noshade>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="bottom"><font
+                    color="#808000" size="2" face="Arial">(c)1999-2003 BioMEMS@UC </font><font color="#808000"
+                    face="Arial"><br>
+                    </font><font color="#808000" size="2"
+                    face="Arial">Powered by </font><font face="Arial" color="#808000" size="2"> lees3@ececs.uc.edu</font><font color="#808000" face="Arial"><br>
+                    </font><font color="#808000" size="2"
+                    face="Arial">MicroSystems and BioMEMS Lab at
+                    University of Cincinnati </font></td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
