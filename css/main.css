@@ -1,65 +1,100 @@
-/* 1. Basic Reset & Global Styles
--------------------------------------------------- */
+/* BioMEMS@UC - Main Stylesheet */
+/* Version: 2025-05-19 (No Sidebar, Content Reduced, More Generalized) */
+
+/* 1. Global Resets & Base Typography
+-------------------------------------------------------------------------------- */
 html {
     box-sizing: border-box;
-    font-size: 100%; /* Establishes a base for rem units if needed later */
+    font-size: 16px; /* Base font size for rem units */
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
-body, html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
-}
-
-body {
-    font-family: Verdana, Arial, Helvetica, sans-serif; /* Fallback for Dotum */
-    font-size: 12px; /* Original zboard.css base size */
-    line-height: 1.5; /* Original zboard.css line-height */
-    color: #333333; /* Slightly darker than original #666 for better readability */
-    background-color: #ffffff;
-    text-align: left; /* Overriding zboard's global center */
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Slightly off-white background for the page */
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-    color: #0033FF; /* Common blue for links from original content */
+    color: #b8011c; /* Primary theme color (UC Red) */
     text-decoration: none;
+    transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+a:hover, a:focus {
+    color: #8c0013; /* Darker red for hover/focus */
+    text-decoration: underline;
 }
 
-a:hover {
-    color: #FF6600; /* Original zboard.css hover color */
-    text-decoration: underline;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 0.75em;
+    line-height: 1.3;
+    font-weight: 600;
+}
+h1 { font-size: 2rem; }    /* 32px */
+h2 { font-size: 1.75rem; } /* 28px */
+h3 { font-size: 1.5rem; }  /* 24px */
+/* h4, h5, h6 can be added if needed */
+
+p {
+    margin-bottom: 1em;
+}
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 0.5em;
+}
+strong, b {
+    font-weight: 600;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border: 0; /* Remove default image borders */
+    display: block;
+    border-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    font-family: Arial, Helvetica, sans-serif; /* Consistent heading font */
+table.data-table { /* For actual data tables */
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+}
+table.data-table th,
+table.data-table td {
+    border: 1px solid #ddd;
+    padding: 0.75em;
+    text-align: left;
+    vertical-align: top;
+}
+table.data-table th {
+    background-color: #f0f0f0; /* Lighter grey for table headers */
+    font-weight: 600;
 }
 
-p, ul, ol {
-    margin-bottom: 1em;
-    text-align: justify; /* As per original zboard.css for p, li */
-}
-ul, ol {
-    padding-left: 20px; /* Standard indentation for lists */
-}
-li {
-    text-align: justify; /* As per original zboard.css for p, li */
-    margin-bottom: 0.5em;
+hr {
+    border: 0;
+    border-top: 1px solid #ddd; /* Slightly darker hr */
+    margin: 2em 0;
 }
 
-
-/* 2. Page Layout Structure
--------------------------------------------------- */
+/* 2. Site Layout Structure
+-------------------------------------------------------------------------------- */
 .site-container {
     display: flex;
     flex-direction: column;
@@ -68,263 +103,668 @@ li {
 }
 
 .site-header {
-    background-color: #000000;
-    color: #ffffff;
-    height: 100px; /* Original frame height */
+    background-color: #000;
+    color: #fff;
+    height: 90px; /* Slightly reduced header height */
     flex-shrink: 0;
-    padding: 0 15px; /* Add some horizontal padding */
+    padding: 0 20px;
+    border-bottom: 3px solid #b8011c;
+    position: sticky; /* Make header sticky */
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Vertically align items in header */
     height: 100%;
-    max-width: 1300px; /* Max width for content within header */
-    margin: 0 auto; /* Center header content */
+    max-width: 1360px; /* Adjusted max-width */
+    margin: 0 auto;
 }
 
-.logo-left img {
-    height: 80px; /* Original height */
-    width: auto;
-}
-
+.logo-left img,
 .logo-right img {
-    height: 80px; /* Original height */
+    height: 70px; /* Adjusted logo height */
     width: auto;
 }
 
 .site-body-container {
-    display: flex;
     flex-grow: 1;
     width: 100%;
-    overflow: hidden; /* Prevent this container from causing page scrollbars */
-}
-
-.site-sidebar {
-    width: 150px; /* Original frame width */
-    flex-shrink: 0;
-    background-color: #f0f0f0; /* Light grey for sidebar */
-    padding: 15px;
-    overflow-y: auto;
+    max-width: 1360px; /* Match header content max-width */
+    margin: 0 auto; /* Center body content */
+    /*padding-top: 20px;  Space below sticky header */
 }
 
 .site-main-content {
-    flex-grow: 1;
-    padding: 20px; /* Add some padding around the main content area */
-    overflow-y: auto;
-    background-color: #ffffff;
+    padding: 20px; /* Uniform padding, can be overridden by .content-section */
+    background-color: #fff; /* White background for main content area */
+    border-radius: 5px; /* Rounded corners for the main content block */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Subtle shadow for the content block */
+    margin-bottom: 20px; /* Space before footer */
 }
 
-
-/* 3. Header Navigation Styling
--------------------------------------------------- */
+/* 3. Navigation
+-------------------------------------------------------------------------------- */
 .main-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    text-align: center; /* For the nav items themselves */
+    align-items: center; /* Ensure items are vertically centered */
+    height: 100%; /* Make ul take full height of nav container */
+    text-align: center;
 }
-
 .main-nav li {
-    margin: 0 5px; /* Spacing between nav items */
-    text-align: center; /* Ensure li content is centered if block */
+    margin: 0 3px; /* Slightly more margin */
 }
-
 .main-nav a {
     font-family: Arial, sans-serif;
-    font-size: 16px; /* Equivalent to original "size 5" font tag, adjust as needed */
-    color: #ffffff;
+    font-size: 0.9375rem; /* 15px */
+    font-weight: 500; /* Normal weight for nav links */
+    color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
-    display: block;
+    padding: 8px 15px; /* Adjusted padding */
+    border-radius: 4px;
+    display: flex; /* For vertical centering of text if line-height isn't enough */
+    align-items: center; /* Vertical centering */
+    height: 40px; /* Fixed height for clickable area */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    text-align: center;
+}
+.main-nav a:hover,
+.main-nav a:focus,
+.main-nav a.active { /* Combined active and hover/focus styles */
+    background-color: #b8011c;
+    color: #fff;
+    text-decoration: none;
 }
 
-.main-nav a:hover {
-    color: #FF6600; /* Standard hover from zboard */
+/* 4. Common Content Components
+-------------------------------------------------------------------------------- */
+.page-title-bar {
+    background-color: #b8011c;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 1.375rem; /* 22px */
+    font-weight: bold;
+    padding: 12px 20px;
+    margin-bottom: 25px; /* Adjusted margin */
+    border-radius: 4px;
+    text-align: center; /* Default centered title */
+}
+.page-title-bar.text-left { /* Allow override */
+    text-align: left;
+}
+
+.content-section {
+    margin-bottom: 25px; /* Consistent bottom margin */
+    padding: 20px;
+    background-color: #fff; /* Usually for sections within .site-main-content if it has a different bg */
+    /* If .site-main-content is white, border might be more useful */
+    border: 1px solid #e0e0e0; /* Lighter border */
+    border-radius: 5px;
+}
+.content-section:last-child {
+    margin-bottom: 0;
+}
+.content-section h2 { /* Headings within content sections */
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.content-section h3 {
+    font-size: 1.25rem; /* 20px */
+    margin-bottom: 10px;
+}
+
+.item-list { /* For news list etc. */
+    list-style-type: disc;
+    padding-left: 25px;
+    font-size: 0.9375rem; /* 15px */
+}
+.item-list li {
+    margin-bottom: 10px;
+    line-height: 1.5; /* Slightly tighter for lists */
+}
+.item-list li a {
+    font-weight: 500; /* Make links in lists stand out a bit */
+}
+.item-list li b, .item-list li strong { /* For highlighted text like "selected as cover" */
+    color: #b8011c;
+    font-weight: 600;
+}
+
+.homepage-main-image img { /* Large image on homepage */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Contact Page Specifics (mostly leveraging common components) */
+.contact-details-container {
+    display: flex;
+    flex-wrap: wrap-reverse; /* Map might go on top on smaller screens */
+    gap: 30px;
+}
+.contact-info {
+    flex: 1 1 320px; /* Base width, can grow */
+}
+.contact-map-image {
+    flex: 1 1 500px; /* Base width for map, can grow */
+    text-align: center;
+    min-width: 280px; /* Ensure map doesn't get too squished */
+}
+.contact-map-image img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.contact-section { /* This class is used within .contact-info */
+    margin-bottom: 20px;
+}
+.contact-section h2 { /* "MicroSystems and BioMEMS Lab" title */
+    font-size: 1.375rem; /* 22px */
+    border-bottom: none; /* No border for this specific h2 */
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+.contact-section h3 { /* "Email", "Offices", "How To Get Here" */
+    font-size: 1.125rem; /* 18px */
+}
+.contact-section p,
+.contact-section ol li {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.6;
+}
+.contact-section ol.directions-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+.contact-section a.external-link::after { /* Small icon for external links */
+    content: ' \2197'; /* North East Arrow */
+    font-size: 0.8em;
+    display: inline-block;
+    margin-left: 3px;
+    text-decoration: none !important; /* Keep icon undecorated */
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.8125rem; /* 13px */
+    color: #555; /* Slightly darker footer text */
+    background-color: #e9ecef; /* Light grey footer background */
+    border-top: 1px solid #ced4da; /* Separator line */
+    margin-top: auto; /* Pushes footer to bottom of viewport if content is short */
+}
+.site-footer p {
+    margin: 0;
+}
+
+/* 5. Utility Classes (Keep this section lean)
+-------------------------------------------------------------------------------- */
+.text-center { text-align: center !important; }
+.text-left   { text-align: left !important; }
+.text-right  { text-align: right !important; }
+/* .text-justify { text-align: justify !important; } -- Use sparingly */
+
+.font-bold   { font-weight: bold !important; }
+/* Add more utilities only if widely needed and not achievable via semantic classes */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* 6. Page-Specific Overrides (AVOID if possible, use inline for true one-offs)
+-------------------------------------------------------------------------------- */
+/* This section should ideally be empty or very small. */
+/* Example:
+.some-truly-unique-page .its-special-element {
+    background-color: lightblue; // This would be a candidate for inline style if it's really a one-off
+}
+*/
+
+/* In ../css/main.css */
+
+/* ... (Keep all existing CSS from before) ... */
+
+
+/* Add or modify in Section 4: Common Content Components OR create a new section */
+
+/* People Page Specifics / Card Layouts */
+.people-category {
+    /* Uses .content-section for base box styling if desired, or can be standalone */
+    /* If not using .content-section wrapper for categories, add padding/margin here */
+    margin-bottom: 30px;
+}
+
+.people-category h2 { /* Styling for main category titles like "Professor", "Students" */
+    font-size: 1.625rem; /* 26px */
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #b8011c; 
+}
+.people-category h2 a { /* If the h2 itself is a link */
+    color: inherit; 
+    text-decoration: none;
+}
+.people-category h2 a:hover {
+    color: #b8011c; 
     text-decoration: underline;
 }
 
-
-/* 4. Main Content Sections Styling
--------------------------------------------------- */
-.news-highlights {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #000000; /* Replicating outline from original table row */
+/* Card layout for current members */
+.people-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive cards */
+    gap: 25px;
 }
 
-.news-highlights h2 {
-    background-color: #b8011c; /* Original red background */
-    color: #ffffff;
-    font-size: 20px; /* Approx original font size="6" */
+.person-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center; /* Center content within card */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.person-card .person-photo {
+    width: 150px; /* Size for profile photos */
+    height: 150px;
+    border-radius: 50%; /* Circular photos */
+    object-fit: cover; /* Ensure photo covers the area well */
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+}
+
+.person-card .person-details {
+    flex-grow: 1; /* Allows details to fill space if cards are uneven */
+}
+
+.person-card h3 { /* Name */
+    font-size: 1.25rem; /* 20px */
+    margin-bottom: 5px;
+    color: #b8011c; /* Theme color for name */
+}
+.person-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+.person-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.person-card .person-title { /* e.g., Professor, PhD Student */
+    font-size: 0.9375rem; /* 15px */
+    color: #555;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.person-card .person-contact {
+    font-size: 0.875rem; /* 14px */
+    color: #444;
+    margin-bottom: 15px;
+    word-break: break-all; /* Break long email addresses */
+}
+.person-card .person-contact a {
+    color: #444;
+}
+.person-card .person-contact a:hover {
+    color: #b8011c;
+}
+.person-card .person-office {
+    font-size: 0.8125rem; /* 13px */
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* Button style for "View Profile" links */
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
     text-align: center;
-    padding: 10px;
-    margin: -15px -15px 15px -15px; /* Extend to fill padding of parent */
-    font-weight: bold;
-}
-
-.news-highlights ul {
-    list-style-type: disc; /* Standard bullets */
-    font-size: 14px; /* Approx original font size="4" */
-    color: #000000;
-    padding-left: 25px; /* Indent list items */
-}
-.news-highlights li {
-    margin-bottom: 8px; /* Original margin style */
-}
-.news-highlights li a { /* Links specifically within news items */
-    color: #0000FF; /* blue */
-}
-
-.main-image-section {
-    text-align: center; /* Center the image */
-    margin-bottom: 20px;
-    border: 1px solid #000000; /* Add border if the original table row implied it */
-    padding: 10px;
-}
-.main-image-section img {
-    max-width: 1280px; /* Original width */
-    width: 100%; /* Make it responsive up to max-width */
-}
-
-.web-counter-section {
-    text-align: right;
-    margin-bottom: 20px;
-    font-size: 10px; /* Smaller text for "Free Web Counter" */
-}
-.web-counter-section img {
-    display: inline-block; /* To align with text if needed */
-    vertical-align: middle;
-}
-.web-counter-section .small-text {
-    font-size: 0.8em;
-}
-
-.older-news { /* Styles for the commented-out older news section */
-    margin-bottom: 20px;
-    border: 1px solid #cccccc;
-    padding: 15px;
-}
-.older-news h3 {
-    background-color: #FF9999; /* Original pink background */
-    color: #000000;
-    font-size: 12px; /* Original font size="2" */
-    padding: 8px;
-    margin: -15px -15px 15px -15px; /* Extend to fill padding of parent */
-    font-weight: bold;
-}
-.older-news ul {
-    list-style-type: disc;
-    font-size: 12px; /* Original font size="2" */
-    color: #000000;
-}
-.older-news li {
-    margin-bottom: 5px;
-}
-
-.welcome-section {
-    text-align: center; /* Center the image and text block for this section */
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #FFDDDD; /* Light pinkish, approximating original #FF9999 but softer */
-    border-top: 1px solid #FF9999;
-    border-bottom: 1px solid #FF9999;
-}
-.welcome-section h3 {
-    font-size: 12px; /* Original font size="2" */
-    color: #000000;
-    font-weight: bold;
-    text-align: left; /* Align heading to left as per original bgcolor bar */
-    margin-bottom: 10px;
-}
-.welcome-section .profile-image {
-    width: 448px; /* Original width */
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border: 1px solid #cccccc; /* Optional: add a light border to image */
-}
-.welcome-section p {
-    font-size: 12px; /* Original font size="2" */
-    color: #000000;
-    text-align: justify;
-    max-width: 600px; /* Limit width for better readability */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.site-search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #f8f8f8; /* Light grey background for search section */
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
-}
-.site-search form {
-    display: flex;
-    align-items: center;
-}
-.site-search .google-logo-link {
-    margin-right: 10px;
-}
-.site-search .google-logo {
-    width: 128px; /* Original width */
-    height: 53px; /* Original height */
-    vertical-align: middle;
-}
-.site-search .search-input {
-    padding: 5px 8px;
-    font-size: 12px;
-    border: 1px solid #cccccc;
-    margin-right: 5px;
-    min-width: 250px; /* Give it some decent width */
-}
-.site-search .search-button {
-    padding: 5px 10px;
-    font-size: 12px;
-    background-color: #e0e0e0;
-    border: 1px solid #cccccc;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
     cursor: pointer;
+    margin-top: auto; /* Push button to bottom of card if details height varies */
 }
-.site-search .search-button:hover {
-    background-color: #d0d0d0;
+.btn-primary {
+    background-color: #b8011c;
+    color: #fff;
+    border: 1px solid #b8011c;
+}
+.btn-primary:hover {
+    background-color: #8c0013;
+    border-color: #8c0013;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: 1px solid #6c757d;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+    color: #fff;
+    text-decoration: none;
 }
 
-.main-footer-info {
-    text-align: right;
-    font-size: 11px; /* Original font size="2" but slightly smaller for footer */
-    color: #333333;
-    padding: 15px;
-    border-top: 1px solid #FF9999; /* Original pink separator */
+
+/* Alumni and Visiting Scholars List */
+.alumni-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9375rem; /* 15px */
 }
-.main-footer-info .copyright {
-    text-align: right; /* Ensure copyright is right aligned */
+.alumni-list li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #eee;
+    line-height: 1.5;
+}
+.alumni-list li:last-child {
+    border-bottom: none;
+}
+.alumni-list strong { /* For the person's name */
+    color: #333;
+    font-weight: 500;
+}
+/* Details after name will inherit general paragraph/span styles or can be more specific if needed */
+
+.alumni-subcategory-title { 
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Individual Person Profile Page Styles */
+.person-profile-section {
+    /* Uses .content-section for base styling */
+}
+.profile-main-info {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: flex-start; /* Align items to the top */
+}
+.profile-image-detailed {
+    flex: 0 0 250px; /* Fixed width for profile image container */
+    text-align: center;
+}
+.profile-image-detailed img {
+    width: 100%;
+    max-width: 250px; /* Max width of image */
+    border-radius: 8px; /* Slightly rounded corners */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.profile-summary {
+    flex: 1 1 300px; /* Takes remaining space */
+}
+.profile-summary h2 { /* Person's name */
+    font-size: 1.75rem; /* 28px */
+    color: #b8011c; /* Theme color for name */
+    margin-bottom: 8px;
+    border-bottom: none; /* Override .content-section h2 border */
+    padding-bottom: 0;
+}
+.profile-title-department {
+    font-size: 1.125rem; /* 18px */
+    color: #555;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.profile-contact-info {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.profile-contact-info strong {
+    color: #333;
+}
+.profile-summary > p:last-of-type { /* For bio paragraph before buttons */
+    margin-bottom: 20px; 
+}
+.profile-summary .btn {
+    margin-right: 10px;
+    margin-bottom: 10px; /* For stacking on small screens */
+}
+
+.profile-details h3 { /* For "Research Interests", "Education" etc. */
+    font-size: 1.375rem; /* 22px */
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+.profile-details .item-list { /* Re-use item-list for education, interests */
+    font-size: 0.9375rem; /* 15px */
+}
+
+/* In ../css/main.css */
+
+/* ... (Keep all existing CSS from before) ... */
+
+/* Modify/Add in Section 4 for People Cards */
+
+.people-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.person-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex; /* Use flex for card content alignment */
+    flex-direction: column; /* Default to vertical stacking */
+    align-items: center; /* Center items for vertical cards */
+    text-align: center; /* Center text for vertical cards */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+}
+
+/* Styles for the new HORIZONTAL professor card */
+.person-card.horizontal-card {
+    flex-direction: row; /* Arrange items horizontally */
+    text-align: left; /* Align text to the left for horizontal cards */
+    align-items: flex-start; /* Align items to the top of the card */
+    grid-column: 1 / -1; /* Make horizontal card span full width if in a grid */
+    margin-bottom: 25px; /* Add some space below the professor card */
+}
+
+.person-card.horizontal-card .person-photo-container {
+    flex: 0 0 180px; /* Fixed width for photo area */
+    margin-right: 20px;
+}
+
+.person-card.horizontal-card .person-photo {
+    width: 100%; /* Photo takes width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 6px; /* Match card radius */
+    border: 1px solid #ddd;
+}
+
+.person-card.horizontal-card .person-details {
+    flex: 1; /* Allow details to take remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align details to the left */
+}
+.person-card.horizontal-card .btn {
+    margin-top: 15px; /* Add margin to button in horizontal card */
+}
+
+
+/* Common styles for both vertical and horizontal cards' inner elements */
+.person-card .person-photo { /* For vertical student cards */
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+}
+
+.person-card .person-details {
+    flex-grow: 1; 
+}
+
+.person-card h3 { 
+    font-size: 1.25rem; 
+    margin-top: 0; /* Remove top margin for h3 in cards */
     margin-bottom: 5px;
+    color: #b8011c; 
 }
-.main-footer-info .extreme-dm-tracker {
-    margin-top: 5px;
+.person-card h3 a {
+    color: inherit;
+    text-decoration: none;
 }
-.main-footer-info .extreme-dm-tracker img {
-    width: 41px; /* Original width */
-    height: 38px; /* Original height */
+.person-card h3 a:hover {
+    text-decoration: underline;
 }
 
-/* 5. Utility Classes (Add as needed)
--------------------------------------------------- */
-.text-center {
-    text-align: center !important;
+.person-card .person-title { 
+    font-size: 0.9375rem; 
+    color: #555;
+    margin-bottom: 8px;
+    font-style: italic;
 }
-.text-left {
-    text-align: left !important;
+
+.person-card .person-contact {
+    font-size: 0.875rem; 
+    color: #444;
+    margin-bottom: 10px; /* Reduced margin */
+    word-break: break-word; /* break-all can be too aggressive */
 }
-.text-right {
-    text-align: right !important;
+.person-card .person-contact a {
+    color: #444;
 }
-.bold {
-    font-weight: bold;
+.person-card .person-contact a:hover {
+    color: #b8011c;
+}
+.person-card .person-office {
+    font-size: 0.8125rem; 
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Individual Person Profile Pages - Main title (H2) adjustment */
+/* (The .page-title-bar is removed from HTML, so no CSS needed to hide it) */
+.person-profile-section .profile-summary h2 { /* Person's name on their own page */
+    font-size: 1.75rem; /* Was 1.625rem, making it a bit more prominent as main page title */
+    color: #b8011c; 
+    margin-bottom: 10px; /* Increased margin a bit */
+    border-bottom: none; 
+    padding-bottom: 0;
+    text-align: left; /* Ensure it's left aligned */
+}
+
+/* In ../css/main.css */
+
+/* ... (Keep all existing CSS from before) ... */
+
+/* Add to Section 4 or create new Section for Research Page Styles */
+
+.research-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Default to responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Slightly larger base for cards */
+    gap: 25px; /* Space between research items */
+    margin-bottom: 30px;
+}
+
+.research-item {
+    /* Uses .content-section for base box styling (padding, border, shadow, radius) */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; /* Ensure white background if not using .content-section directly */
+}
+
+.research-image-container {
+    width: 100%;
+    /* height: 200px; */ /* Optional: fixed height for image container */
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee; /* Separator if image is distinct from text bg */
+}
+
+.research-image-container img {
+    width: 100%;
+    height: 100%; /* Fill container if height is set on container */
+    object-fit: cover; /* Cover the area, might crop */
+    /* object-fit: contain; /* Contain image within bounds, might leave empty space */
+    display: block;
+    border-radius: 4px 4px 0 0; /* Rounded top corners if image is at the very top of the card */
+}
+
+.research-details {
+    padding: 0 15px 15px 15px; /* Padding for text content if image is flush with top */
+    /* If .content-section handles padding, this might just be margin-top or padding-top */
+    flex-grow: 1; /* Ensure details section takes up space */
+    display: flex;
+    flex-direction: column;
+}
+
+.research-details h3 {
+    font-size: 1.2rem; /* 19.2px */
+    color: #b8011c; /* Theme color for research titles */
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.research-details .related-publication {
+    font-size: 0.875rem; /* 14px */
+    color: #555;
+    margin-top: auto; /* Push publication link to the bottom of the card */
+    padding-top: 10px; /* Space above the link */
+}
+.related-publication strong,
+.related-publication b { /* If you use bold for "Related publication:" */
+    color: #333;
+}
+
+.related-publication a {
+    /* Standard link styles apply, or add specifics here */
+    font-weight: 500;
+}
+.related-publication a.external-link::after, a.external-link { /* If you add this class to links */
+    content: ' \2197';
+    font-size: 1em;
+    color: blue;
+}
+
+/* For the older list of research topics if you uncomment it */
+.older-research-topics h2 {
+    margin-bottom: 15px;
+}
+.older-research-topics .item-list ul { /* For nested lists */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 25px; /* Indent sub-items */
+    list-style-type: circle; /* Different bullet for sub-items */
 }
